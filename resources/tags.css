@@ -1,0 +1,70 @@
+/* tags*/
+.tags {
+	margin: 0 3em;
+}
+
+.tags form {
+	display: inline;
+}
+
+.tag {
+	padding: 5px;
+	font-weight: bold;
+	color: orange;
+	cursor: pointer;
+}
+
+.addtag {
+	color: #bbb;
+	cursor: pointer;
+}
+
+#addtaginput {
+	position: inherit;
+	top: auto;
+	right: auto;
+}
+
+/* browse */
+#outerpopup {
+	display: none;
+	z-index: 100;
+	position: fixed;
+	width: 100%;
+	height: 600px;
+	top: 50%;
+	margin-top: -300px;
+}
+
+#popup {
+	width: 800px;
+	padding: 0 1em;
+	height: 600px;
+	background-color: white;
+	border: 3px solid orange;
+	margin: auto;
+	overflow: auto;
+}
+
+#closebutton {
+	font-size: 1.5em;
+	float: right;
+	cursor: pointer;
+}
+
+#popup ul {
+	margin: 0;
+}
+
+#popup h2 {
+	font-size: 150%;
+	background-color: inherit;
+}
+
+#taglist li {
+	display: inline-block;
+}
+
+#tagpages {
+	
+}
