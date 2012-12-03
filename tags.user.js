@@ -20,6 +20,6 @@ function addJS(head, file) {
 	head.appendChild(script);
 }
 
-var prefix = 'http://localhost/DJPW-tags/resources/';
+var prefix = 'https://raw.github.com/juriad/DJPW-tags/master/';
 addCSS(head, prefix + 'tags.css');
 addJS(head, prefix + 'combined.js');
