@@ -3,6 +3,7 @@
 // @name Tagovatko
 // @namespace artique.cz
 // @include http://diskuse.jakpsatweb.cz/?action=vthread*
+// @version 1.0
 // ==/UserScript==
 
 var head = document.querySelector("head");
