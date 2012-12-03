@@ -77,9 +77,9 @@ function TagsFeature() {
 	this.prepareFeature = function() {
 		var db = new TagsDB();
 		this.dialog = this.prepareDialog(db);
-
+		var that = this;
 		prepareEachPost(db, function(tagName) {
-			this.dialog.showTag(tagName);
+			that.dialog.showTag(tagName);
 		});
 	};
 

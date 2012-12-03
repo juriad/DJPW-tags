@@ -393,12 +393,9 @@ API used:
 	Element.setAttribute
 	Element.style
 	Element.removeChild
-	
-	
 	Event.preventDefault
 	Event.target
 	Event.stopPropagation
-	
 	String.toUpperCase
  */
 function TagsDialog(db) {
@@ -528,6 +525,22 @@ TagsDialog.prototype.showTag = function(tagName) {
 	this.show();
 	this.showTagPosts(tagName);
 };
+/*
+API used:
+	Array.push
+	Document.createElement
+	Document.createTextNode
+	Document.getElementById
+	Document.querySelector
+	Element.addEventListener
+	Element.appendChild
+	Element.innnerHTML
+	Element.insertBefore
+	Element.setAttribute
+	Event.preventDefault
+	Event.target
+	Event.stopPropagation
+ */
 function TagsFeature() {
 	var tagsLists = [];
 	this.dialog;
@@ -591,12 +604,12 @@ function TagsFeature() {
 	this.prepareFeature = function() {
 		var db = new TagsDB();
 		this.dialog = this.prepareDialog(db);
-
+		var that = this;
 		prepareEachPost(db, function(tagName) {
-			this.dialog.showTag(tagName);
+			that.dialog.showTag(tagName);
 		});
 	};
-	
+
 	this.prepareFeature();
 }
 
