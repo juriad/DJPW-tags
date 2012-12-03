@@ -1,6 +1,7 @@
 /* tags*/
 .tags {
 	margin: 0 3em;
+	display: inline;
 }
 
 .tags form {
@@ -8,10 +9,10 @@
 }
 
 .tag {
-	padding: 5px;
 	font-weight: bold;
 	color: orange;
 	cursor: pointer;
+	display: inline-block;
 }
 
 .addtag {
@@ -19,15 +20,18 @@
 	cursor: pointer;
 }
 
+#addtaginput,.tag {
+	margin: 0 1em;
+}
+
 #addtaginput {
-	position: inherit;
+	position: absolute;
 	top: auto;
 	right: auto;
 }
 
 /* browse */
 #outerpopup {
-	display: none;
 	z-index: 100;
 	position: fixed;
 	width: 100%;
